@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Free Stay for Cyclists | CycleCafe.lk</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Free stay for touring cyclists in Sri Lanka. Community-powered volunteer hosts by CycleCafe.lk">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background: #003580;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 { margin: 0; font-size: 30px; }
+header p { margin-top: 8px; font-size: 16px; }
+
+.search-box {
+  background: #fff;
+  padding: 20px;
+  margin: -25px auto 30px;
+  max-width: 1100px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.search-box input, .search-box select, .search-box button { padding: 12px; font-size: 15px; }
+.search-box button { background: #003580; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+.container { max-width: 1100px; margin: auto; padding: 20px; }
+
+.listing { background: #fff; display: grid; grid-template-columns: 220px 1fr 180px; gap: 20px; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
+.listing img { width: 100%; height: 160px; object-fit: cover; border-radius: 6px; }
+.badge { display: inline-block; background: #1f7a4f; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 12px; margin-bottom: 6px; }
+.amenities span { display: inline-block; font-size: 13px; background: #eef3ff; margin: 3px; padding: 4px 8px; border-radius: 12px; }
+.action { text-align: right; }
+.free { color: #1f7a4f; font-weight: bold; font-size: 18px; }
+.action a { display: inline-block; margin-top: 10px; padding: 10px 15px; background: #003580; color: #fff; text-decoration: none; border-radius: 6px; font-size: 14px; }
+
+.volunteer { background: #ffffff; padding: 40px 25px; border-radius: 8px; margin: 40px auto; max-width: 1100px; border-left: 6px solid #1f7a4f; }
+.volunteer h2 { color: #1f7a4f; margin-top: 0; }
+.volunteer p { max-width: 800px; line-height: 1.6; }
+.volunteer a { display: inline-block; margin-top: 15px; padding: 12px 24px; background: #1f7a4f; color: #fff; text-decoration: none; border-radius: 25px; font-weight: bold; }
+
+footer { text-align: center; padding: 30px 20px; font-size: 13px; color: #777; }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🚴 Free Stay for Cyclists</h1>
+  <p>Community-powered free rest spaces for touring cyclists across Sri Lanka</p>
+</header>
+
+<!-- SEARCH -->
+<div class="search-box">
+  <input type="text" placeholder="Search by location or route (e.g. Kandy, Ella)">
+  <select>
+    <option>Filter by Amenities</option>
+    <option>Secure Bike Parking</option>
+    <option>Shower</option>
+    <option>Water Refill</option>
+    <option>Laundry</option>
+  </select>
+  <input type="date">
+  <button>Search</button>
+</div>
+
+<!-- MAP VIEW -->
+<div class="container">
+  <h2 style="margin-bottom:15px;">🗺️ Free Stay Map View</h2>
+
+  <div id="map" style="
+    width:100%;
+    height:420px;
+    border-radius:8px;
+    border:1px solid #ddd;">
+  </div>
+</div>
+
+<!-- LISTINGS -->
+<div class="container">
+
+  <div class="listing">
+    <img src="https://via.placeholder.com/300x200" alt="Free Stay Kandy">
+
+    <div>
+      <span class="badge">FREE STAY</span>
+      <h3>Green Hills Homestay – Kandy</h3>
+      <p>📍 Near Kandy Cycling Route</p>
+
+      <div class="amenities">
+        <span>🚲 Secure Bike Parking</span>
+        <span>🚿 Shower</span>
+        <span>💧 Water Refill</span>
+      </div>
+
+      <p>One free night offered to long-distance touring cyclists.</p>
+    </div>
+
+    <div class="action">
+      <div class="free">1 Night FREE</div>
+      <a href="https://forms.gle/DhGTr9XmdY64xXHN9" target="_blank">Request Stay</a>
+      <p style="margin-top:8px;font-size:13px;color:#555;">Approval depends on host availability.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- VOLUNTEER SECTION -->
+<div class="volunteer">
+  <h2>Become a Volunteer Host</h2>
+  <p>If you have spare space and can offer one night to touring cyclists, please register as a volunteer host. Hosts are asked to provide basic details, location, and confirm availability. Participation is voluntary and community-driven.</p>
+  <a href="https://forms.gle/he6Gwz52zuu2A3ey5" target="_blank">Register as a Volunteer Host</a>
+</div>
+
+<footer>
+  &copy; 2026 CycleCafe.lk · Community-powered cycling network
+</footer>
+
+</body>
+</html>

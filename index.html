@@ -31,6 +31,35 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+        <!-- Free Stay styles (new design, scoped) -->
+        <style>
+        /* Scoped to #free-stay-embed to avoid global overrides */
+        #free-stay-embed .hero {
+            background: linear-gradient(135deg, #1f7a4f, #003580);
+            color: #fff;
+            padding: 90px 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        #free-stay-embed .hero h1 { font-size: 42px; margin-bottom: 15px; }
+        #free-stay-embed .hero p { font-size: 20px; max-width: 850px; margin: auto; }
+        #free-stay-embed .hero .btn { display: inline-block; margin: 25px 10px 0; padding: 14px 28px; border-radius: 30px; font-weight: bold; text-decoration: none; font-size: 16px; }
+        #free-stay-embed .btn-primary { background: #ffffff; color: #003580; }
+        #free-stay-embed .btn-secondary { border: 2px solid #ffffff; color: #ffffff; background: transparent; }
+        #free-stay-embed .container { max-width: 1100px; margin: auto; padding: 60px 20px; }
+        #free-stay-embed .section { background: #ffffff; padding: 40px; border-radius: 10px; margin-bottom: 40px; }
+        #free-stay-embed .section h2 { color: #1f7a4f; margin-top: 0; }
+        #free-stay-embed .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
+        #free-stay-embed .box { background: #f9fafb; padding: 25px; border-radius: 8px; border-left: 6px solid #1f7a4f; }
+        #free-stay-embed .box h3 { margin-top: 0; }
+        #free-stay-embed .badge { display: inline-block; background: #1f7a4f; color: #fff; padding: 6px 14px; border-radius: 20px; font-size: 13px; margin-top: 10px; }
+        #free-stay-embed .cta { text-align: center; padding: 60px 20px; background: #ffffff; }
+        #free-stay-embed .cta h2 { margin-bottom: 15px; }
+        /* Notice banner */
+        #free-stay-embed .notice-banner { background: linear-gradient(90deg, #f7fff2 0%, #ffffff 100%); border-left: 6px solid #1f7a4f; color: #073b2d; padding: 16px; border-radius: 8px; margin: 20px 0; box-shadow: 0 1px 4px rgba(0,0,0,0.04); text-align: center; }
+        #free-stay-embed .notice-banner strong { display: block; font-size: 18px; margin-bottom: 6px; }
+        #free-stay-embed .notice-banner p { margin: 0; font-size: 15px; line-height: 1.4; }
+        </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -55,16 +84,18 @@
             <div class="navbar-nav ms-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#skill" class="nav-item nav-link">Skills</a>
-                <a href="#service" class="nav-item nav-link">Services</a>
+                <a href="#skill" class="nav-item nav-link">What We Do</a>
+                <a href="#service" class="nav-item nav-link">Get Involved</a>
             </div>
             <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
                 <h1 class="text-primary fw-bold m-0">cycle cafe</h1>
             </a>
             <div class="navbar-nav me-auto py-0">
-                <a href="#project" class="nav-item nav-link">Projects</a>
+                <a href="#project" class="nav-item nav-link">Community Initiatives</a>
                 <a href="#team" class="nav-item nav-link">Team</a>
                 <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
+                <a href="#free-stay-embed" class="nav-item nav-link">Free Stay</a>
+                <a href="safety.html" class="nav-item nav-link">Safety</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
@@ -123,45 +154,24 @@ Slow rides, Real people, Shared futures, Ride • Refresh • Reconnect, Eco Cyc
 
 
     <!-- About Start -->
-    <div class="container-xxl py-6" id="about">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">15</h1>
-                            <h5 class="mb-0">Years</h5>
-                        </div>
-                        <h3 class="lh-base mb-0">of working experience as a traveler & Bicycle Rider</h3>
-                    </div>
-                    <p class="mb-4">Using bicycles as a tool to foster understanding, unity, and local livelihoods.<br><br>→ Join the Journey | Collaborate With Cycle Café LK</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Quality, Rider-First Experiences</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Carefully Crafted Cycling Experiences</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>On Time Project Delivery</p>
-                    <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
-                        </div>
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Where Cycling Connects Communities</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
-                    </div>
-                    <p class="mb-4">Cycle Café LK was born from a simple idea: cycling can connect people, places, and cultures while protecting the environment we share. What began as personal rides through towns and villages has grown into a community-driven platform that promotes slow tourism, coexistence, and sustainable mobility across Sri Lanka.</p>
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Community-First</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
-                    </div>
-                    <p class="mb-0">Building Coexistence Through Slow Cycling<br>Using bicycles as a tool to foster understanding, unity, and local livelihoods.<br><br>→ Join the Journey | Collaborate With Cycle Café LK</p>
-                </div>
-            </div>
-        </div>
+    <div class="container py-5 bg-light" id="about">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">📊 Community Impact (Not Profit)</h2>
+        <p class="text-muted">
+          We do not measure success in money or bookings.
+        </p>
+      </div>
+
+      <ul>
+        <li>Districts connected by bicycle</li>
+        <li>Volunteer hosts joining the network</li>
+        <li>Cyclists supported on long journeys</li>
+        <li>Stories shared across cultures</li>
+      </ul>
+
+      <p class="fw-bold text-center">
+        These numbers represent connections — not revenue.
+      </p>
     </div>
     <!-- About End -->
 
@@ -319,12 +329,21 @@ Slow rides, Real people, Shared futures, Ride • Refresh • Reconnect, Eco Cyc
     <!-- Expertise End -->
 
 
-    <!-- Service Start -->
+    <!-- Get Involved Start -->
     <div class="container-fluid bg-light my-5 py-6" id="service">
         <div class="container">
             <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Our Services</h1>
+                    <h1 class="display-5 mb-0">How the Community Supports Cyclists</h1>
+                    <p class="mb-3">Support comes not from businesses, but from people. Every contribution is voluntary and based on goodwill.</p>
+                    <p class="mb-2"><strong>Examples of support:</strong></p>
+                    <ul class="list-unstyled mb-3">
+                        <li>🏡 Free rest spaces offered by volunteer hosts</li>
+                        <li>💧 Water refills and simple meals from local cafés</li>
+                        <li>🚲 Safe bicycle parking and advice</li>
+                        <li>☕ Conversation, guidance, and local stories</li>
+                    </ul>
+                    <p class="mb-0"><strong>No payments. No obligations. Just kindness.</strong></p>
                 </div>
                 <div class="col-lg-6 text-lg-end">
                     <a class="btn btn-primary py-3 px-5" href="#contact">Partner With Us</a>
@@ -334,345 +353,311 @@ Slow rides, Real people, Shared futures, Ride • Refresh • Reconnect, Eco Cyc
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
+                            <i class="fa fa-bicycle fa-2x text-dark"></i>
                         </div>
                         <div class="ms-sm-4">
-                            <h4 class="mb-3">🚴 Community Cycling Experiences</h4>
-                            <span>Guided and self-guided community-based cycling rides<br><br>Urban, rural, and cultural cycling routes designed for all levels<br><br>Slow-paced journeys focused on people, places, and stories</span>
+                            <h4 class="mb-3">🚴 Touring Cyclist</h4>
+                            <span>Ride, request a stay, respect hosts, and share feedback to help the network improve.</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code-branch fa-2x text-dark"></i>
+                            <i class="fa fa-home fa-2x text-dark"></i>
                         </div>
                         <div class="ms-sm-4">
-                            <h4 class="mb-3">Slow Tourism & Eco Travel</h4>
-                            <span>Development of slow tourism cycling trails<br><br>Eco-friendly travel experiences that minimise environmental impact<br><br>Responsible tourism models supporting local livelihoods</span>
+                            <h4 class="mb-3">🏡 Volunteer Host</h4>
+                            <span>Offer spare space when you can — there’s no obligation, just goodwill and safety.</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code fa-2x text-dark"></i>
+                            <i class="fa fa-coffee fa-2x text-dark"></i>
                         </div>
                         <div class="ms-sm-4">
-                            <h4 class="mb-3">Route Design & Pilot Trail Development</h4>
-                            <span>Planning and testing cycling routes and pilot trails<br><br>Distance, elevation, safety, and accessibility assessments<br><br>Scalable route models for long-term tourism initiatives</span>
+                            <h4 class="mb-3">☕ Local Café / Shop</h4>
+                            <span>Provide water refills, rest stops, or a friendly conversation to welcome riders passing through.</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                            <i class="fa fa-handshake fa-2x text-dark"></i>
                         </div>
                         <div class="ms-sm-4">
-                            <h4 class="mb-3">Community & SME Engagement</h4>
-                            <span>Connecting cyclists with local cafés, artisans, homestays, and SMEs<br><br>Creating market access through cycling tourism<br><br>Promoting community-owned tourism experiences</span>
+                            <h4 class="mb-3">🤝 Community Partner</h4>
+                            <span>Schools, NGOs, local councils — support safe routes, host training, or community welcome programs.</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    <!-- Get Involved End -->
+
+        <!-- Free Stay Section (new design inlined) -->
+        <div id="free-stay-embed">
+
+            <!-- HERO -->
+            <section class="hero">
+                <h1>🚴 Free Stay for Cyclists</h1>
+                <p>A community-powered network of kind hosts across Sri Lanka offering <strong>free resting space</strong> to long-distance touring cyclists.</p>
+
+                <a href="https://forms.gle/QiLywtnAtuNEddt2A" target="_blank" class="btn btn-primary">Find a Free Stay</a>
+                <a href="https://forms.gle/he6Gwz52zuu2A3ey5" target="_blank" class="btn btn-secondary">Become a Volunteer Host</a>
+            </section>
+
+            <div class="alert alert-warning text-dark mt-4 mb-0" role="alert" style="border-left:5px solid #ff8c00; background:#fff7e6;">
+                <strong>⚠️ Please note:</strong>
+                <div class="mt-1">This program is not suitable for party travel, luxury tourism, or last-minute accommodation requests. It exists for respectful, slow, long-distance cyclists.</div>
+            </div>
+
+            <div class="notice-banner">
+                <strong>🌱 Non-Commercial Community Initiative</strong>
+                <p>CycleCafe.lk is not a hotel platform, booking service, or business marketplace. All activities are voluntary, community-driven, and free of charge.</p>
+            </div>
+
+            <div class="container">
+
+                <!-- WHAT IS THIS -->
+                <div class="section">
+                    <h2>🌱 What Is Free Stay?</h2>
+                    <p>Free Stay is a <strong>non-commercial, community kindness initiative</strong> by CycleCafe.lk.</p>
+                    <p>We connect touring cyclists with volunteer hosts who offer one free night of rest, safety, and human connection — supporting slow travel, cultural exchange, and sustainable tourism.</p>
+                </div>
+
+                <!-- HOW IT WORKS -->
+                <div class="section">
+                    <h2>🔄 How It Works</h2>
+                    <div class="grid">
+                        <div class="box">
+                            <h3>🚴 For Cyclists</h3>
+                            <ul>
+                                <li>Ride long-distance routes</li>
+                                <li>Request a free stay</li>
+                                <li>Rest & recover</li>
+                                <li>Continue your journey</li>
+                            </ul>
+                        </div>
+
+                        <div class="box">
+                            <h3>🏡 For Volunteer Hosts</h3>
+                            <ul>
+                                <li>Offer spare space</li>
+                                <li>Provide safe bike parking</li>
+                                <li>Meet inspiring travelers</li>
+                                <li>Support eco travel</li>
+                            </ul>
+                            <span class="badge">Community Hero</span>
+                        </div>
+
+                        <div class="box">
+                            <h3>🌍 Community Impact</h3>
+                            <ul>
+                                <li>Supports slow tourism</li>
+                                <li>Reduces travel cost barriers</li>
+                                <li>Builds people-to-people trust</li>
+                                <li>Promotes Sri Lanka globally</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TRUST removed: full rules live on safety.html -->
+
+                <!-- WHY IT EXISTS -->
+                <div class="section">
+                    <h2>🤍 Why Free Stay Exists</h2>
+                    <div class="grid">
+                        <div class="box">
+                            <h3>Reduce Cost Barriers</h3>
+                            <p>Reduce cost barriers for long-distance cyclists.</p>
+                        </div>
+
+                        <div class="box">
+                            <h3>Encourage Human Connection</h3>
+                            <p>Encourage human connection, not transactions.</p>
+                        </div>
+
+                        <div class="box">
+                            <h3>Promote Sri Lanka Through Kindness</h3>
+                            <p>Promote Sri Lanka through kindness, not marketing.</p>
+                        </div>
+
+                        <div class="box">
+                            <h3>Support Slow Travel</h3>
+                            <p>Support slow, respectful travel.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FINAL CTA -->
+            <div class="cta">
+                <h2>Join the Kindness Network 🚴‍♂️🌱</h2>
+                <p>Whether you ride or host — you are welcome.</p>
+                <a href="https://forms.gle/QiLywtnAtuNEddt2A" target="_blank" class="btn btn-primary">Find a Free Stay</a>
+                <a href="https://forms.gle/he6Gwz52zuu2A3ey5" target="_blank" class="btn btn-secondary">Offer Free Space</a>
+            </div>
+
+        </div>
+        <!-- Free Stay Section End -->
 
 
     <!-- Projects Start -->
     <div class="container-xxl py-6 pt-5" id="project">
-        <div class="container">
-            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Key Initiatives & Journeys</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
-                        <li class="mx-3 active" data-filter="*">All Initiatives</li>
-                        <li class="mx-3" data-filter=".first">Cycling Journeys</li>
-                        <li class="mx-3" data-filter=".second">Community Projects</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/project-1.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/project-2.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/project-3.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/project-4.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/project-5.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/project-6.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="container py-5">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold">🌍 Community Initiatives</h2>
+            <p class="text-muted">
+              These initiatives grow from the road, the riders, and the people we meet —
+              not from commercial goals.
+            </p>
+          </div>
+
+          <ul>
+            <li>🚴 Free Stay for Touring Cyclists</li>
+            <li>🗺️ Route-based cycling journeys</li>
+            <li>🌱 Slow tourism &amp; eco-travel awareness</li>
+            <li>🤍 Community-hosted rest points</li>
+          </ul>
+
+          <p>
+            Each initiative grows only with community consent and participation.
+          </p>
         </div>
     </div>
     <!-- Projects End -->
 
 
     <!-- Team Start -->
-    <div class="container-xxl py-6 pb-5" id="team">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Team Members</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Contact Us</a>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                    <h5>Klashmi Kahandawala</h5>
-                                <span>Founder & Community Cycling Lead</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>CJ kahandawala</h5>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Kiruthigan</h5>
-                                <span>Creative Direction & Visual Storytelling</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-4.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>RMC Rathanayake</h5>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-5.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Drone Eranda</h5>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container py-5" id="team">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">🧑‍🤝‍🧑 People Behind the Movement</h2>
+        <p class="text-muted">
+          CycleCafe.lk is not run by a company.
+        </p>
+      </div>
+
+      <p>
+        It is supported by cyclists, hosts, friends, and volunteers
+        who believe in sharing space, stories, and responsibility.
+      </p>
+
+      <p>
+        Roles are flexible. Contributions are voluntary.
+        Everyone involved is part of the same journey.
+      </p>
     </div>
     <!-- Team End -->
 
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid bg-light py-5 my-5" id="testimonial">
-        <div class="container-fluid py-5">
-            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonial</h1>
-            <div class="row justify-content-center">
-                <div class="col-lg-3 d-none d-lg-block">
-                    <div class="testimonial-left h-100">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-1.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
+        <!-- Testimonial Start -->
+        <div class="container-fluid bg-light py-5 my-5" id="testimonial">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">🗣️ Voices from the Road</h1>
+                <p class="text-center mb-4">Words shared by cyclists and hosts who met through kindness, not transactions.</p>
+
+                <div class="testimonial-carousel owl-carousel owl-theme">
+
+                    <div class="item">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <div class="testimonial-left h-100">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Cycle Café LK is more than a cycling initiative. It connects people, supports local livelihoods, and shows how slow travel can build understanding and unity. Every ride creates real community impact.”</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-2.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <blockquote class="fs-5 fst-italic text-center">“I was offered a simple place to rest, tea, and conversation. That night meant more than any hotel.”</blockquote>
+                            </div>
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <div class="testimonial-right h-100">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-3.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-1.jpg" alt="">
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">“As a teacher and cyclist, he turns every journey into a lesson. Students and young riders learn sustainability, discipline, and coexistence through real experience.”</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
                         </div>
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-3.jpg" alt="">
-                                <div class="testimonial-icon">
-                                    <i class="fa fa-quote-left text-primary"></i>
+                    </div>
+
+                    <div class="item">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <div class="testimonial-left h-100">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-2.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-3.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-1.jpg" alt="">
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">“Cycle Café LK brought cyclists to our village and helped our small business grow—respectfully and sustainably.”</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <blockquote class="fs-5 fst-italic text-center">“Hosts welcomed me like family. The kindness kept me going.”</blockquote>
+                            </div>
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <div class="testimonial-right h-100">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-2.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-1.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 d-none d-lg-block">
-                    <div class="testimonial-right h-100">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
+
+                    <div class="item">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <div class="testimonial-left h-100">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-3.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-1.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <blockquote class="fs-5 fst-italic text-center">“A small bed and warm conversation—more meaningful than any paid stay.”</blockquote>
+                            </div>
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <div class="testimonial-right h-100">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-3.jpg" alt="">
+                                    <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Testimonial End -->
+        <!-- Testimonial End -->
 
 
-    <!-- Contact Start -->
-    <div class="container-xxl pb-5" id="contact">
-        <div class="container py-5">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Partnerships & Collaboration</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="#contact">Start a Conversation</a>
-                </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="mb-2">Organisation:</p>
-                    <h3 class="fw-bold">Cycle Café LK</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Founder & Contact Person:</p>
-                    <h3 class="fw-bold">CJ Kahandawala</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Base Location:</p>
-                    <h3 class="fw-bold">Sri Jayawardenepura Kotte, Sri Lanka</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Contact Number:</p>
-                    <h3 class="fw-bold">+94 71 083 0031</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Connect with Cycle Café LK:</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href="https://x.com/cyclecafelk" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61585853621008" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.youtube.com/@cyclecafelk" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.tiktok.com/@cyclecafe.lk?_r=1&_t=ZS-92nVnheuIJF" target="_blank"><i class="fab fa-tiktok"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <p class="mb-4">
-Cycle Café LK welcomes collaboration with government institutions, local authorities,
-educational bodies, NGOs, community organisations, and responsible private-sector partners.
-<br><br>
-We are open to partnerships related to sustainable mobility, slow tourism, national integration,
-youth engagement, environmental education, and community-based tourism initiatives.
-                    </p>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <!-- Let's Work Together — Join the Community -->
+    <div class="container py-5" id="contact">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">🌱 Join the Community</h2>
+        <p>
+          You don’t need money, a business, or special skills to join.
+          Just respect, honesty, and openness.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <a href="#free-stay-embed" class="btn btn-primary m-2">
+          Find a Free Stay
+        </a>
+        <a href="https://forms.gle/he6Gwz52zuu2A3ey5" class="btn btn-outline-secondary m-2" target="_blank" rel="noopener">
+          Offer Free Space
+        </a>
+        <a href="safety.html" class="btn btn-outline-dark m-2">
+          Safety & Rules
+        </a>
+      </div>
     </div>
     <!-- Contact End -->
 
@@ -696,7 +681,7 @@ youth engagement, environmental education, and community-based tourism initiativ
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom text-secondary" href="#">cyclecafe.lk</a>, All Right Reserved.
+                        <p class="mb-0">CycleCafe.lk is a non-commercial, community-powered initiative.<br>Just people supporting people on two wheels.</p>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
@@ -728,13 +713,6 @@ youth engagement, environmental education, and community-based tourism initiativ
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
-     <!-- WhatsApp Floating Button -->
-     <a href="https://wa.me/94710830031?text=Hello%20Cycle%20Caf%C3%A9%20LK%2C%20I%20would%20like%20to%20connect%20regarding%20a%20collaboration."
-         class="whatsapp-float"
-         target="_blank"
-         aria-label="Chat with Cycle Café LK on WhatsApp">
-         <i class="fab fa-whatsapp"></i>
-     </a>
 
+</body>
 </html>
